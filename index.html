@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турагенція "TurIair"</title>
+    <link rel="stylesheet" href=".//css/style.css">
+    <link rel="stylesheet" href=".//css/page2.css">
+    <link rel="stylesheet" href=".//css/page5.css">
+    <link rel="stylesheet" href=".//css/page6.css">
+    <link rel="shortcut icon" href=".//images/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/brand.jpg" alt="TurIair" id='brand'>
+        <div>TurIair - з нами відпочивати веселіше ;)</div>
+        <button id="link6">☻</button>
+    </header>
+    <nav>
+        <button id='link1'>Home</button>
+        <button id='link2'>Prices</button>
+        <button id="link3">Hot</button>
+        <button id="link4">Gallery</button>
+        <button id="link5">About Us</button>
+    </nav>
+    <div id="main">
+        <div id="page1">
+            <main>
+                <div>
+                    <img src="images/pict1.jpg" alt="pict1" class="pict1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure velit exercitationem sit earum possimus reprehenderit iusto? Veritatis incidunt quasi obcaecati ducimus inventore reprehenderit eligendi, recusandae asperiores rem impedit cumque!</p>
+                </div>
+                <div>
+                    <img src="images/pict2.jpg" alt="pict2" class="pict2">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure velit exercitationem sit earum possimus reprehenderit iusto? Veritatis incidunt quasi obcaecati ducimus inventore reprehenderit eligendi, recusandae asperiores rem impedit cumque!</p>
+                </div>
+                <div>
+                    <img src="images/pict3.jpg" alt="pict3" class="pict3">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa iure velit exercitationem sit earum possimus reprehenderit iusto? Veritatis incidunt quasi obcaecati ducimus inventore reprehenderit eligendi, recusandae asperiores rem impedit cumque!</p>
+                </div>
+            </main>
+            <aside>
+                <div class="weather">
+                </div>
+                <div class="weather">
+                </div>
+                <div class="weather">
+                </div>
+            </aside>
+        </div>
+        <div id="page2"></br>
+            <form action="./php/db.php" method="POST" id="forma">
+                <fieldset >
+                    <legend>Пошук Тура</legend>
+                    <select name="country" id="country">
+                        <option disabled selected>Країна</option>
+                    </select>
+                    <select name="city" id="city">
+                        <option disabled selected>Місто</option>
+                    </select>
+                    <input type="number" name="days" id="days" placeholder="Кількість днів"><br />
+                    <button id='btnSearch'>Пошук</button>
+                </fieldset>
+            </form>
+            <button id='btnResearch'>Повернутись до пошуку</button>
+        </div>
+        <div id="page5">
+            <h4>Контактні дані:</h4>
+            <p>т.(093)123-45-67</p>
+            <p>т.(067)123-45-67</p>
+            <p>e-mail: turiair-online@gmail.com</p>
+            <h5>Адреса:</h5>
+            <p>м.Київ, вул.Богдана Хмельницького, буд.12</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d267.06353205343913!2d30.516591420804087!3d50.44574186709235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce57b90692c3%3A0xa3e607a0c7322f2a!2z0YPQuy4g0JHQvtCz0LTQsNC90LAg0KXQvNC10LvRjNC90LjRhtC60L7Qs9C-LCAxMiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613146192775!5m2!1sru!2sua"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <div id="page6">
+            <form id='auth'>
+                <fieldset>
+                    <legend>Аутентифікація</legend>
+                    <input type="text" name="Login" id="login" placeholder="Login" required>
+                    <input type="text" name="Pass" id="pass" placeholder="Password" required></br>
+                    <input type="checkbox" name="not_attach_ip">Не прикріплювати до IP(небезпечно) <br>
+                    <button id='bLogin'>LogIn</button>
+                    <button id="cancel" type="reset">Cancel</button><br/>
+                    <p class="error"></p><br/>
+                    Якщо ви незареєстровані. Будь-ласка <a id='regClick'>зареєструйтесь</a>
+                </fieldset>
+            </form>
+            <form id='addForm'>
+                <fieldset>
+                    <legend>Додати запис</legend>
+                    <input type="text" name="addCode" id="addCode" placeholder="Код країни" required>
+                    <input type="text" name="addCountry" id="addCountry" placeholder="Країна" required>
+                    <input type="text" name="addCity" id="addCity" placeholder="Місто" required>
+                    <input type="date" name="addDate" id="addDate" placeholder="Дата" required>
+                    <input type="text" name="addDays" id="addDays" placeholder="Кількість днів" required>
+                    <button id='addButton'>Додати</button>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>   
+<footer>
+    <span class='copyright'>Copyright © by Oleg Yovchik</span>
+</footer>
+    <script src=".//js/home.js" defer></script>
+    <script src=".//js/prices.js" defer></script>
+    <script src=".//js/us.js" defer></script>
+    <script src=".//js/admin.js" defer></script>
+
+</p>
+</body>
+</html>

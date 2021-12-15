@@ -1,0 +1,38 @@
+#page6{
+    flex-direction: column;
+    display: none;
+    min-height: 76vh;
+}
+#auth, #reg{
+    margin: 10px auto;
+    text-align: center;
+}
+#auth input, #reg input:not([type="checkbox"]){
+    margin: 5px auto;
+}
+#auth button{
+    justify-content: end;
+}
+#auth a{
+    text-decoration: none;
+    font-family: cursive;
+    color: brown;
+    cursor: pointer;
+}
+table{
+    text-align: center;
+    width: 90%;
+    margin: 2em auto;
+}
+#addForm{
+    text-align: center;
+    display: none;
+}
+#addButton{
+    margin-top: 5px;
+}
+button[id^='edit'],button[id^='delete'],input[type='submit'],input[type='button']{
+    background-color: rgba(29, 28, 28, 0.75);
+    color:white;
+    border-radius: 5px;
+}
